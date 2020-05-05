@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+
+    <!--    配置应用名称-->
+    <dubbo:application name="order-provider"/>
+
+    <!--    指定注册中心地址-->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+
+    <!--    使用dubbo协议，将服务暴露在 20880 端口上-->
+    <dubbo:protocol name="dubbo" port="20881"/>
+
+    <!--    创建 orderServiceImpl 对象-->
+    <bean id="orderServiceImpl" class="com.nn.service.OrderServiceImpl"/>
+
+    <!--    指定需要暴露的服务-->
+    <dubbo:service interface="com.nn.service.OrderService" ref="orderServiceImpl"/>
+</beans>
