@@ -10,10 +10,14 @@
     <dubbo:registry address="zookeeper://127.0.0.1" port="2181"/>
 
     <!--    生成远程调用对象-->
-    <dubbo:reference id="orderService" interface="com.nn.service.OrderService"/>
+    <dubbo:reference id="orderService" interface="com.nn.service.OrderService" timeout="5000">
+        <dubbo:method name="queryAllOrder" timeout="3000"></dubbo:method>
+    </dubbo:reference>
 
     <!--    创建 userServiceImpl 对象-->
     <bean id="userServiceImpl" class="com.nn.service.UserServiceImpl">
         <property name="orderService" ref="orderService"/>
     </bean>
+
+    <dubbo:consumer timeout="5000"></dubbo:consumer>
 </beans>

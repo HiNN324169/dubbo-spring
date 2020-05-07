@@ -17,5 +17,11 @@
     <bean id="orderServiceImpl" class="com.nn.service.OrderServiceImpl"/>
 
     <!--    指定需要暴露的服务-->
-    <dubbo:service interface="com.nn.service.OrderService" ref="orderServiceImpl"/>
+    <dubbo:service interface="com.nn.service.OrderService" ref="orderServiceImpl"></dubbo:service>
+
+    <!-- dubbo 超时处理，优先级：方法级别 > 类级别 > 全局
+    <dubbo:service interface="com.nn.service.OrderService" ref="orderServiceImpl" timeout="5000">
+        <dubbo:method name="queryAllOrder" timeout="3000"></dubbo:method> --> <!-- 方法级别 -->
+    <!-- </dubbo:service>-->   <!-- 类级别 -->
+    <!-- <dubbo:provider timeout="5000"></dubbo:provider> --> <!-- 全局级别 -->
 </beans>

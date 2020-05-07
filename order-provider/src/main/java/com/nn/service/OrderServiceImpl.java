@@ -1,6 +1,5 @@
 package com.nn.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.nn.pojo.Order;
 
 import java.util.ArrayList;
@@ -12,7 +11,7 @@ import java.util.List;
  * @Date 2020/5/5 13:25
  */
 
-@Service
+@com.alibaba.dubbo.config.annotation.Service(timeout = 5000)
 public class OrderServiceImpl implements OrderService {
 
     private static List<Order> orderList = new ArrayList<>();

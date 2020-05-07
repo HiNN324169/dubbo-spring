@@ -15,7 +15,7 @@ import java.util.List;
 @Service
 public class UserServiceImpl {
 
-    @Reference
+    @Reference(timeout = 5000)
     private OrderService orderService;
 
 //    public void setOrderService(OrderService orderService) {
