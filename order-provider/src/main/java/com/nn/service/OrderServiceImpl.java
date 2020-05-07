@@ -11,7 +11,7 @@ import java.util.List;
  * @Date 2020/5/5 13:25
  */
 
-@com.alibaba.dubbo.config.annotation.Service(timeout = 5000)
+//@com.alibaba.dubbo.config.annotation.Service(timeout = 5000)
 public class OrderServiceImpl implements OrderService {
 
     private static List<Order> orderList = new ArrayList<>();

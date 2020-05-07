@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb049122-18f3-447f-8a9d-3612e130e979" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/order-consumer/src/main/java/com/nn/service/SubOrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-consumer/src/main/java/com/nn/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-consumer/src/main/java/com/nn/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-consumer/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-consumer/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-consumer/target/classes/applicationContext-2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-consumer/target/classes/applicationContext-2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-consumer/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-consumer/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-consumer/target/classes/com/nn/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-consumer/target/classes/com/nn/service/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-provider/src/main/java/com/nn/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-provider/src/main/java/com/nn/service/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-provider/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-provider/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-provider/src/test/java/com/nn/One.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-provider/src/test/java/com/nn/One.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-provider/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-provider/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-provider/target/classes/com/nn/service/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-provider/target/classes/com/nn/service/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-provider/target/test-classes/com/nn/One.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-provider/target/test-classes/com/nn/One.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,8 +158,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Two" />
         <item itemvalue="Application.One" />
+        <item itemvalue="Application.Two" />
         <item itemvalue="Application.A" />
         <item itemvalue="Application.test" />
       </list>
@@ -180,7 +188,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588655647766</updated>
       <workItem from="1588655650530" duration="17724000" />
-      <workItem from="1588759753428" duration="4339000" />
+      <workItem from="1588759753428" duration="9248000" />
     </task>
     <task id="LOCAL-00001" summary="spring 整合 dubbo + zookeeper">
       <created>1588675093639</created>
@@ -196,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588820335334</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加超时配置">
+      <created>1588838233408</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588838233408</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,45 +219,46 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring 整合 dubbo + zookeeper" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring 整合 dubbo + zookeeper" />
+    <MESSAGE value="添加超时配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加超时配置" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="43" key="#Project_Structure" timestamp="1588657171454">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="43" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1588657171454" />
-    <state x="488" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1588662620097">
+    <state x="488" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1588842374829">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="488" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1588662620097" />
+    <state x="488" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1588842374829" />
     <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588662356176">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1588662356176" />
-    <state x="208" y="0" key="CommitChangelistDialog2" timestamp="1588820330957">
+    <state x="208" y="0" key="CommitChangelistDialog2" timestamp="1588838230273">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="208" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588820330957" />
+    <state x="208" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588838230273" />
     <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1588674815979">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1588674815979" />
-    <state width="1323" height="104" key="GridCell.Tab.0.bottom" timestamp="1588758392385">
+    <state width="1323" height="285" key="GridCell.Tab.0.bottom" timestamp="1588844288739">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="104" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588758392385" />
-    <state width="1323" height="104" key="GridCell.Tab.0.center" timestamp="1588758392385">
+    <state width="1323" height="285" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588844288739" />
+    <state width="1323" height="285" key="GridCell.Tab.0.center" timestamp="1588844288738">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="104" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588758392385" />
-    <state width="1323" height="104" key="GridCell.Tab.0.left" timestamp="1588758392384">
+    <state width="1323" height="285" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588844288738" />
+    <state width="1323" height="285" key="GridCell.Tab.0.left" timestamp="1588844288738">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="104" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588758392384" />
-    <state width="1323" height="104" key="GridCell.Tab.0.right" timestamp="1588758392385">
+    <state width="1323" height="285" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588844288738" />
+    <state width="1323" height="285" key="GridCell.Tab.0.right" timestamp="1588844288738">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="104" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588758392385" />
+    <state width="1323" height="285" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588844288738" />
     <state width="1323" height="160" key="GridCell.Tab.1.bottom" timestamp="1588758392373">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

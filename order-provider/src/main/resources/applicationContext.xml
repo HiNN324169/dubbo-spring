@@ -11,7 +11,7 @@
     <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
 
     <!--    使用dubbo协议，将服务暴露在 20880 端口上-->
-    <dubbo:protocol name="dubbo" port="20881"/>
+    <dubbo:protocol name="dubbo" port="20880"/>
 
     <!--    创建 orderServiceImpl 对象-->
     <bean id="orderServiceImpl" class="com.nn.service.OrderServiceImpl"/>

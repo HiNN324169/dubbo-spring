@@ -3,17 +3,21 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
 
-<!--    说明应用程序名称-->
+    <!--    说明应用程序名称-->
     <dubbo:application name="order-consumer"/>
 
-<!--    指定注册中心-->
+    <!--    指定注册中心-->
     <dubbo:registry address="zookeeper://127.0.0.1" port="2181"/>
 
-<!--    生成远程调用对象-->
-    <dubbo:reference id="orderService" interface="com.nn.service.OrderService"/>
+    <!--    引用 远程调用对象-->
+    <dubbo:reference id="orderService" interface="com.nn.service.OrderService" timeout="5000" check="false" version="*" stub="com.nn.service.SubOrderServiceImpl">
+        <dubbo:method name="queryAllOrder" timeout="3000"></dubbo:method>
+    </dubbo:reference>
 
-<!--    创建 userServiceImpl 对象-->
+    <!--    创建 userServiceImpl 对象-->
     <bean id="userServiceImpl" class="com.nn.service.UserServiceImpl">
         <property name="orderService" ref="orderService"/>
     </bean>
+
+    <dubbo:consumer timeout="5000" check="false"></dubbo:consumer>
 </beans>

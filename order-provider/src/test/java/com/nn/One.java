@@ -13,7 +13,7 @@ import java.io.IOException;
 public class One {
 
     public static void main(String[] args) throws IOException {
-        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:applicationContext-2.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
         System.out.println("服务提供者启动成功:21880");
         System.in.read();
     }
