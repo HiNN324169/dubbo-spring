@@ -18,9 +18,9 @@ public class OrderServiceImpl implements OrderService {
     private static List<Order> orderList = new ArrayList<>();
 
     static {
-        orderList.add(new Order(1,"99999999999",1));
-        orderList.add(new Order(2,"66666666666",1));
-        orderList.add(new Order(3,"33333333333",1));
+        orderList.add(new Order(1, "99999999999", 1));
+        orderList.add(new Order(2, "66666666666", 1));
+        orderList.add(new Order(3, "33333333333", 1));
     }
 
     @Override

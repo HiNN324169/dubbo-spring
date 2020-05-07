@@ -25,8 +25,8 @@ public class UserServiceImpl {
 
     public void queryOrderById(Integer userId) {
         List<Order> orders = orderService.queryAllOrder(userId);
-        for (Order order: orders) {
-            System.out.println(order.getId()+"  "+order.getOrderNu()+"  "+order.getUserId());
+        for (Order order : orders) {
+            System.out.println(order.getId() + "  " + order.getOrderNu() + "  " + order.getUserId());
         }
     }
 }
